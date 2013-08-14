@@ -1,0 +1,22 @@
+<!--
+ Programmer:  Greg Savidge
+ Class     :  CS211D
+ Date      :  July 17, 2013
+ Instructor:  Abbas Moghtanei
+ File Name :  strings.xml
+ 
+ Purpose:
+ 
+ This is the resource for my dimens.xml.
+ 
+ -->
+
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_medium">20sp</dimen>
+    <dimen name="text_large">50sp</dimen>
+
+</resources>
