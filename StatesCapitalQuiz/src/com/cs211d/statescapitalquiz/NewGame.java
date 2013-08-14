@@ -1,5 +1,5 @@
 /*
- Programmer:  Greg Savidge
+ Programmer:  Greg Savidge **modifying**
  Class     :  CS211D
  Date      :  July 17, 2013
  Homework  :  #5
