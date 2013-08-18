@@ -145,7 +145,7 @@ public class NewGame extends Activity
 		else  //ends game and sends name, score to ShowScores.java
 		{
 			Toast noName = Toast.makeText(this, "You Score Is: " 
-		       + numberCorrect + " out of 100", Toast.LENGTH_LONG);
+		       + numberCorrect + " out of 100 great Job!", Toast.LENGTH_LONG);
 			noName.setGravity(Gravity.CENTER, 0, -200);
 			noName.show();
 			positionCounter++;
