@@ -6,25 +6,38 @@
     android:gravity="center_horizontal"
     tools:context=".MainScreen" >
 
-    <Button 
+    <Button android:id="@+id/getQuestionsBtn"
+        android:onClick="mainActivityBtnHandler"
         android:layout_width="300dp" 
         android:layout_height="wrap_content"
-        android:text="Hit Me"
+        android:text="@string/getQuestionsBtn"
         />
-    <Button 
+    
+    <Button android:id="@+id/askQuestionsBtn"
+        android:onClick="mainActivityBtnHandler" 
         android:layout_width="300dp" 
         android:layout_height="wrap_content"
-        android:text="Ask A Question?"
+        android:text="@string/askQuestionsBtn"
         />
-    <Button  
+    
+    <Button  android:id="@+id/searchBtn"
+        android:onClick="mainActivityBtnHandler"
         android:layout_width="300dp" 
         android:layout_height="wrap_content"
-        android:text="Search Results"
+        android:text="@string/searchBtn"
         />
-    <Button 
+    
+    <Button android:id="@+id/settingsBtn"
+        android:onClick="mainActivityBtnHandler"
         android:layout_width="300dp" 
         android:layout_height="wrap_content"
-        android:text="Settings"
+        android:text="@string/settingsBtn"
+        />
+    
+    <TextView android:id="@+id/testDebug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Debug Output Empty"        
         />
     
     
