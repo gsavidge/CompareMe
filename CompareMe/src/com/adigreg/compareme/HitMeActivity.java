@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
-public class HitMe extends Activity
+public class HitMeActivity extends Activity
 {
 	TextView debugOutput;
    
@@ -39,7 +39,7 @@ public class HitMe extends Activity
 //*****************************Submit Button Handler**************************/
     public void submitBtnPushed(View v)
     {
-    	Intent showResults = new Intent (this, ShowResults.class);
+    	Intent showResults = new Intent (this, ShowResultsActivity.class);
     	startActivity(showResults);
     }
 }
