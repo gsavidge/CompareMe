@@ -3,7 +3,7 @@ package com.adigreg.compareme;
 import android.app.Activity;
 import android.os.Bundle;
 
-public class ShowResults extends Activity
+public class ShowResultsActivity extends Activity
 {
 	@Override
 	protected void onCreate(Bundle savedInstanceState)

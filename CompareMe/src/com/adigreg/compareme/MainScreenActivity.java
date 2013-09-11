@@ -15,20 +15,21 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
 
-public class MainScreen extends Activity
+public class MainScreenActivity extends Activity
 {
 	CompareMeDB myDb;
 	TextView debugOutput;
 	SQLiteDatabase db;
 	
 	@Override
-	protected void onCreate(Bundle savedInstanceState)
+	protected void onCreate(Bundle b)
 	{
-		super.onCreate(savedInstanceState);
+		super.onCreate(b);
 		setContentView(R.layout.activity_main_screen);
+	//	db=((CompareMe)getApplication()).db;
 		 
 		debugOutput = (TextView) findViewById(R.id.testDebug);
-		Log.d("Message", "app is starting");
+		Log.d("Mian Screen Activity", "Main Screen onCreate");
 		
 		Context con = getApplicationContext();
 		con.deleteDatabase("compareMe.db");
@@ -36,10 +37,12 @@ public class MainScreen extends Activity
 		myDb = new CompareMeDB(this);
 		Log.d("Hello","Hello");
 		
+	
 		 // lets test to make
-	    myDb.openDatabase();
-	    db=myDb.getReadableDatabase();
+//	    myDb.openDatabase();
+//	    db=myDb.getReadableDatabase();
 		
+		 		
 		Cursor c = db.query("users",null,null,null,null,null,null,null);
 	    logCursorInfo(c);
 	    
@@ -51,7 +54,7 @@ public class MainScreen extends Activity
 	    
 	    c = db.query("language_table",null,null,null,null,null,null,null);
 	    logCursorInfo(c);
-		
+	
 		
 	}
 
@@ -78,7 +81,7 @@ public class MainScreen extends Activity
 //************************HitMeScreen Intent**********************************/
 	public void hitMe()
 	{
-		Intent hitMe = new Intent (this, HitMe.class);
+		Intent hitMe = new Intent (this, HitMeActivity.class);
 		startActivity(hitMe);
 	}
 	
