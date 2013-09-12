@@ -55,6 +55,6 @@ INSERT INTO users (name,location_city,location_state,location_country,age,status
 INSERT INTO questions  ( topic_id ,user_id, language_id ,title ,answer1 ,answer2,answer3 ,answer4) VALUES
 (1,1,1,'How many times does a partner need to say I love You each day?', 'The more the better!' ,' 3 times a day','Once is good enough','When He/She deserves it');
 
-INSERT INTO topics  ( _id ,topic_description) VALUES (0,'relationships');
+INSERT INTO topics  ( _id ,topic_description) VALUES (1,'relationships');
 
-INSERT INTO language_table  ( _id ,name) VALUES (0,'english');
+INSERT INTO language_table  ( _id ,name) VALUES (1,'english');

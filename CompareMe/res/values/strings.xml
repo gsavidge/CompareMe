@@ -7,5 +7,7 @@
     <string name="askQuestionsBtn">Ask A Question?</string>
     <string name="searchBtn">Search Results</string>
     <string name="settingsBtn">Settings</string>  
+    <string name ="DBMasterUserName">TBD</string>
+    <string name ="DBMasterPasswrod">TBD</string>
 
 </resources>

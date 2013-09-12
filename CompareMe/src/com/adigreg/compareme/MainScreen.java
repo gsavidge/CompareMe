@@ -21,6 +21,8 @@ public class MainScreen extends Activity
 	TextView debugOutput;
 	SQLiteDatabase db;
 	
+	
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -30,15 +32,18 @@ public class MainScreen extends Activity
 		debugOutput = (TextView) findViewById(R.id.testDebug);
 		Log.d("Message", "app is starting");
 		
+		
+		
 		Context con = getApplicationContext();
 		con.deleteDatabase("compareMe.db");
 		
-		myDb = new CompareMeDB(this);
-		Log.d("Hello","Hello");
 		
-		 // lets test to make
-	    myDb.openDatabase();
-	    db=myDb.getReadableDatabase();
+		//**************From Application*********************
+		CompareMe compareme = (CompareMe)getApplication();
+	    db = compareme.getDbNow();
+		
+		
+		
 		
 		Cursor c = db.query("users",null,null,null,null,null,null,null);
 	    logCursorInfo(c);
@@ -52,6 +57,9 @@ public class MainScreen extends Activity
 	    c = db.query("language_table",null,null,null,null,null,null,null);
 	    logCursorInfo(c);
 		
+	    //CompareMe display= new CompareMe(getBaseContext());
+	    
+	    if (!db.isOpen()) debugOutput.setText("open");
 		
 	}
 
