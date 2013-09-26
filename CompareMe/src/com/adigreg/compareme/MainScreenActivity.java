@@ -22,7 +22,7 @@ public class MainScreenActivity extends Activity
 	CompareMeDB myDb;
 	TextView debugOutput;
 	SQLiteDatabase db;
-	
+	Context con;
 	
 	
 	@Override
@@ -39,7 +39,7 @@ public class MainScreenActivity extends Activity
 		
 		
 		
-		Context con = getApplicationContext();
+		con = getApplicationContext();
 		con.deleteDatabase("compareMe.db");
 		
 		
@@ -84,14 +84,14 @@ public class MainScreenActivity extends Activity
 		   case R.id.getQuestionsBtn:   hitMe(); break;
 		   case R.id.askQuestionsBtn:   debugOutput.setText("2"); break;
 		   case R.id.searchBtn:         debugOutput.setText("3"); break;
-		   case R.id.settingsBtn:       debugOutput.setText("4"); break;
+		   case R.id.settingsBtn:       settings(); break;
 		}
 	}
 	
 //************************HitMeScreen Intent**********************************/
 	public void hitMe()
 	{
-		Intent hitMe = new Intent (this, HitMeActivity.class);
+		Intent hitMe = new Intent (con, HitMeActivity.class);
 		startActivity(hitMe);
 	}
 	
@@ -110,7 +110,8 @@ public class MainScreenActivity extends Activity
 //************************Settings Intent*************************************/
 	public void settings()
 	{
-		
+		Intent settings = new Intent (con, SettingsActivity.class);
+		startActivity(settings);
 	}
 
 	//*************************Database Log Visualization************************/	

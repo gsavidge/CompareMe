@@ -41,8 +41,9 @@ public final class R {
     public static final class layout {
         public static final int activity_hit_me=0x7f030000;
         public static final int activity_main_screen=0x7f030001;
-        public static final int activity_show_results=0x7f030002;
-        public static final int activity_splash_screen=0x7f030003;
+        public static final int activity_settings=0x7f030002;
+        public static final int activity_show_results=0x7f030003;
+        public static final int activity_splash_screen=0x7f030004;
     }
     public static final class menu {
         public static final int main=0x7f080000;

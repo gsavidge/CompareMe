@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="10"
-        android:targetSdkVersion="17" />
+        android:targetSdkVersion="18" />
 
     <application
         android:allowBackup="true"
@@ -15,7 +15,7 @@
         android:theme="@style/AppTheme"
         android:name="com.adigreg.compareme.CompareMe">
             <activity 
-               android:name=".SplashScreen">
+               android:name=".SplashScreenActivity">
                 <intent-filter >
                   <action android:name="android.intent.action.MAIN"/>
                   <category android:name="android.intent.category.LAUNCHER"/>
@@ -23,7 +23,7 @@
             </activity>
            
             <activity
-            android:name="com.adigreg.compareme.MainScreen"
+            android:name="com.adigreg.compareme.MainScreenActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,7 +32,7 @@
         </activity>
         
         <activity 
-            android:name="com.adigreg.compareme.HitMe"
+            android:name="com.adigreg.compareme.HitMeActivity"
             android:label="@string/app_name" >
             <intent-filter >
                 <action android:name="android.intent.action.Game" />
@@ -41,12 +41,21 @@
         </activity>
         
         <activity 
-            android:name="com.adigreg.compareme.ShowResults"
+            android:name="com.adigreg.compareme.ShowResultsActivity"
             android:label="@string/app_name" >
             <intent-filter >
                 <action android:name="android.intent.action.Game" />
                 <category android:name="android.intent.category.DEFAULT" />         
             </intent-filter>                     
+        </activity>
+        
+         <activity
+            android:name="com.adigreg.compareme.SettingsActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
         
     </application>
