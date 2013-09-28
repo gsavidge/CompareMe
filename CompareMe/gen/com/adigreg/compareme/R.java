@@ -29,10 +29,15 @@ public final class R {
         public static final int Question3=0x7f090003;
         public static final int Question4=0x7f090004;
         public static final int Submit=0x7f090005;
-        public static final int action_settings=0x7f09000c;
+        public static final int UserI=0x7f09000c;
+        public static final int UserInfoTitle=0x7f09000b;
+        public static final int action_settings=0x7f090011;
         public static final int askQuestionsBtn=0x7f090008;
+        public static final int bLeft=0x7f09000e;
+        public static final int bRight=0x7f09000d;
         public static final int getQuestionsBtn=0x7f090007;
-        public static final int pageName=0x7f09000b;
+        public static final int listView1=0x7f09000f;
+        public static final int pageName=0x7f090010;
         public static final int questionTitle=0x7f090000;
         public static final int searchBtn=0x7f090009;
         public static final int settingsBtn=0x7f09000a;
@@ -55,17 +60,25 @@ public final class R {
     public static final class string {
         public static final int DBMasterPasswrod=0x7f060007;
         public static final int DBMasterUserName=0x7f060006;
+        public static final int HintYourName=0x7f06000a;
+        public static final int UserInfoTitle=0x7f060009;
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
         public static final int askQuestionsBtn=0x7f060003;
+        public static final int bLeft=0x7f06000c;
+        public static final int bRight=0x7f06000b;
         public static final int getQuestionsBtn=0x7f060002;
         public static final int searchBtn=0x7f060004;
+        /**  Settings Activity 
+         */
+        public static final int settingsActivityName=0x7f060008;
         public static final int settingsBtn=0x7f060005;
     }
     public static final class style {
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+        <style name="AppBaseTheme" parent="android:Theme.Light">
     
 
             Theme customizations available in newer API levels can go in
@@ -81,6 +94,7 @@ public final class R {
         Base application theme for API 14+. This theme completely replaces
         AppBaseTheme from BOTH res/values/styles.xml and
         res/values-v11/styles.xml on API 14+ devices.
+  
     
  API 14 theme customizations can go here. 
          */

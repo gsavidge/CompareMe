@@ -9,5 +9,13 @@
     <string name="settingsBtn">Settings</string>  
     <string name ="DBMasterUserName">TBD</string>
     <string name ="DBMasterPasswrod">TBD</string>
+    
+    
+    <!-- Settings Activity --> 
+    <string name="settingsActivityName">Settings</string>
+    <string name ="UserInfoTitle">User Profile</string>
+ 	<string name ="HintYourName">Enter Your Name</string>
+ 	<string name ="bRight">Play!</string>
+ 	<string name ="bLeft">TBD</string>
 
 </resources>
