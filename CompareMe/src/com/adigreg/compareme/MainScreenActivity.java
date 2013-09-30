@@ -11,8 +11,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
+
 public class MainScreenActivity extends BaseActivity
 {
+	final String TAG = "Main Screen Actvity";
 	CompareMeDB myDb;
 	TextView debugOutput;
 	SQLiteDatabase db;
@@ -23,8 +25,8 @@ public class MainScreenActivity extends BaseActivity
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main_screen);
-		 
+	//	setContentView(R.layout.activity_main_screen);
+	
 		debugOutput = (TextView) findViewById(R.id.testDebug);
 		Log.d("Message", "app is starting");
 		
