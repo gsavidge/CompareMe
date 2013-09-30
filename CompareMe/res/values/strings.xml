@@ -10,6 +10,11 @@
     <string name ="DBMasterUserName">TBD</string>
     <string name ="DBMasterPasswrod">TBD</string>
     
+    <!--  Hit me Activity -->
+    <string name ="Activity_name">Hit Me!</string>
+    <string name ="ok">OK</string>
+    <string name ="anotherOne">Scrap it</string>
+    
     
     <!-- Settings Activity --> 
     <string name="settingsActivityName">Settings</string>
@@ -18,4 +23,9 @@
  	<string name ="bRight">Play!</string>
  	<string name ="bLeft">TBD</string>
 
+ 	 <!-- BaseActivity Activity Action Bar--> 
+    <string name="HitMe">Hit Me</string>
+    <string name ="AskAQuestion">Hit Them</string>
+    <string name ="ShowResults">Results</string>
+    <string name ="Settings">Settings</string>
 </resources>

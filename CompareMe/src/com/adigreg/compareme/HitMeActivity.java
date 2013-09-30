@@ -1,17 +1,18 @@
 package com.adigreg.compareme;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
 import android.view.View;
-import android.view.Window;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
-public class HitMeActivity extends Activity
+public class HitMeActivity extends BaseActivity
 {
+	final String TAG = "Hit me Activity";
 	TextView debugOutput;
 	CompareMeDB hitmeDB;
 	SQLiteDatabase db;
@@ -26,8 +27,6 @@ public class HitMeActivity extends Activity
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-		requestWindowFeature(Window.FEATURE_NO_TITLE); // remove the activity title
-    //    this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN); // Removes notification bar
 		setContentView(R.layout.activity_hit_me);
 		
 		//hitmeDB = new CompareMeDB(this);
@@ -51,6 +50,17 @@ public class HitMeActivity extends Activity
 		if (db.isOpen()) debugOutput.setText("open");
 		
 		
+	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu)
+	{
+		 Log.i(TAG,"***Option Menu***");       
+		// Inflate the menu; this adds items to the action bar if it is present.
+	//	MenuInflater inflater = getMenuInflater();
+		getMenuInflater().inflate(R.menu.menu_hit_me, menu);
+		return true;
+		//return super.onCreateOptionsMenu(menu);
 	}
 //*****************************Set Q's and Title From DB**********************/
 	public void setQuestions()
@@ -93,10 +103,20 @@ public class HitMeActivity extends Activity
         }   
     }
  
-//*****************************Submit Button Handler**************************/
-    public void submitBtnPushed(View v)
+//*****************************Answer Button Handler**************************/
+    public void answerBtnPushed(View v)
     {
-    	Intent showResults = new Intent (this, ShowResultsActivity.class);
-    	startActivity(showResults);
+    	switch (v.getId())
+	    {
+ 	      case R.id.bSubmit:
+ 	    	  Log.d("TAG","OK was pushed");
+ 	    	  Intent showResults = new Intent (this, ShowResultsActivity.class);
+ 	       	  startActivity(showResults);
+ 	    	  break;
+ 	      case R.id.bScrapIt: 
+ 	    	  Log.d("TAG","Scrap it was pushed");
+ 	    	  break;
+        }  
+    
     }
 }

@@ -15,7 +15,6 @@
         android:theme="@style/AppTheme"
         android:name="com.adigreg.compareme.CompareMe"
         >
-        <!--  android:name="com.adigreg.compareme.CompareMe" -->
         <activity 
         	android:name=".SplashScreenActivity">
             <intent-filter >
@@ -35,7 +34,7 @@
         
         <activity 
             android:name="com.adigreg.compareme.HitMeActivity"
-            android:label="@string/app_name" >
+            android:label="@string/Activity_name" >
             <intent-filter >
                 <action android:name="android.intent.action.Game" />
                 <category android:name="android.intent.category.DEFAULT" />         

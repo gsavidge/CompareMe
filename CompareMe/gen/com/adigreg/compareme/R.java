@@ -24,24 +24,25 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
+        public static final int AskAQestion=0x7f090010;
+        public static final int GameInstructions=0x7f090008;
+        public static final int HitMe=0x7f09000f;
         public static final int Question1=0x7f090001;
         public static final int Question2=0x7f090002;
         public static final int Question3=0x7f090003;
         public static final int Question4=0x7f090004;
-        public static final int Submit=0x7f090005;
-        public static final int UserI=0x7f09000c;
-        public static final int UserInfoTitle=0x7f09000b;
-        public static final int action_settings=0x7f090011;
-        public static final int askQuestionsBtn=0x7f090008;
-        public static final int bLeft=0x7f09000e;
-        public static final int bRight=0x7f09000d;
-        public static final int getQuestionsBtn=0x7f090007;
-        public static final int listView1=0x7f09000f;
-        public static final int pageName=0x7f090010;
+        public static final int ShowRestuls=0x7f090011;
+        public static final int ShowSettings=0x7f090012;
+        public static final int UserI=0x7f09000a;
+        public static final int UserInfoTitle=0x7f090009;
+        public static final int bLeft=0x7f09000c;
+        public static final int bRight=0x7f09000b;
+        public static final int bScrapIt=0x7f090006;
+        public static final int bSubmit=0x7f090007;
+        public static final int listView1=0x7f09000d;
+        public static final int pageName=0x7f09000e;
         public static final int questionTitle=0x7f090000;
-        public static final int searchBtn=0x7f090009;
-        public static final int settingsBtn=0x7f09000a;
-        public static final int testDebug=0x7f090006;
+        public static final int testDebug=0x7f090005;
     }
     public static final class layout {
         public static final int activity_hit_me=0x7f030000;
@@ -51,27 +52,38 @@ public final class R {
         public static final int activity_splash_screen=0x7f030004;
     }
     public static final class menu {
-        public static final int main=0x7f080000;
-        public static final int main_screen=0x7f080001;
+        public static final int main_screen=0x7f080000;
+        public static final int menu_hit_me=0x7f080001;
     }
     public static final class raw {
         public static final int compare_me=0x7f040000;
     }
     public static final class string {
+        /**   Hit me Activity 
+         */
+        public static final int Activity_name=0x7f060008;
+        public static final int AskAQuestion=0x7f060011;
         public static final int DBMasterPasswrod=0x7f060007;
         public static final int DBMasterUserName=0x7f060006;
-        public static final int HintYourName=0x7f06000a;
-        public static final int UserInfoTitle=0x7f060009;
+        public static final int HintYourName=0x7f06000d;
+        /**  BaseActivity Activity Action Bar
+         */
+        public static final int HitMe=0x7f060010;
+        public static final int Settings=0x7f060013;
+        public static final int ShowResults=0x7f060012;
+        public static final int UserInfoTitle=0x7f06000c;
         public static final int action_settings=0x7f060001;
+        public static final int anotherOne=0x7f06000a;
         public static final int app_name=0x7f060000;
         public static final int askQuestionsBtn=0x7f060003;
-        public static final int bLeft=0x7f06000c;
-        public static final int bRight=0x7f06000b;
+        public static final int bLeft=0x7f06000f;
+        public static final int bRight=0x7f06000e;
         public static final int getQuestionsBtn=0x7f060002;
+        public static final int ok=0x7f060009;
         public static final int searchBtn=0x7f060004;
         /**  Settings Activity 
          */
-        public static final int settingsActivityName=0x7f060008;
+        public static final int settingsActivityName=0x7f06000b;
         public static final int settingsBtn=0x7f060005;
     }
     public static final class style {
