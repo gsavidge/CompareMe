@@ -10,22 +10,34 @@
     <string name ="DBMasterUserName">TBD</string>
     <string name ="DBMasterPasswrod">TBD</string>
     
+     <!-- BaseActivity Activity Action Bar--> 
+    <string name="HitMe">Hit Me</string>
+    <string name ="AskAQuestion">Hit Them</string>
+    <string name ="ShowResults">Results</string>
+    <string name ="Settings">Settings</string>
+    
     <!--  Hit me Activity -->
     <string name ="Activity_name">Hit Me!</string>
     <string name ="ok">OK</string>
     <string name ="anotherOne">Scrap it</string>
     
-    
     <!-- Settings Activity --> 
     <string name="settingsActivityName">Settings</string>
     <string name ="UserInfoTitle">User Profile</string>
- 	<string name ="HintYourName">Enter Your Name</string>
- 	<string name ="bRight">Play!</string>
- 	<string name ="bLeft">TBD</string>
-
- 	 <!-- BaseActivity Activity Action Bar--> 
-    <string name="HitMe">Hit Me</string>
-    <string name ="AskAQuestion">Hit Them</string>
-    <string name ="ShowResults">Results</string>
-    <string name ="Settings">Settings</string>
+    <string name ="pref_connect_fb">Connect with FB</string>
+    <string name ="pref_userInfo">User Information</string>
+ 	<string name ="pref_userInfo_provider">User Information</string>
+ 	<string name ="pref_userName">User Name</string>
+ 	<string name ="pref_userAge">Age Group</string>
+ 	<string name ="pref_userGender">Gender</string>
+ 	<string name ="pref_userStatus">Status</string>
+ 	<string name ="pref_QuestionSettings">Questions</string>
+ 	<string name ="pref_language">Language</string>
+ 	<string name ="pref_subjects">Subjects</string>
+ 	<string name ="pref_sharing">Social Sharing</string>
+ 	<string name ="pref_sharingFB">Post to FB</string>
+ 	<string name ="pref_locationServices">Location Services</string>
+ 	
+ 	
+ 	
 </resources>

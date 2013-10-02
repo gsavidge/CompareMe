@@ -68,7 +68,7 @@
     android:text="@string/anotherOne"
     android:onClick="answerBtnPushed" />
  
-    <Button 
+ <Button 
     style="?android:buttonBarButtonStyle"
     android:id="@+id/bSubmit"
     android:layout_width="fill_parent"

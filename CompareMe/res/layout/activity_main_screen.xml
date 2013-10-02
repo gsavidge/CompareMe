@@ -5,13 +5,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainScreen" >
-<!-- 
+
     <TextView
         android1:id="@+id/GameInstructions"
         android1:layout_width="wrap_content"
         android1:layout_height="wrap_content"
-        android1:text="Need to add /n instructions on how /n to play the game" />
--->
+        android1:text="Need to add instructions on how to play the game" />
 
 
 </LinearLayout>

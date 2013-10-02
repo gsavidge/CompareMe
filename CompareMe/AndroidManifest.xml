@@ -50,14 +50,16 @@
             </intent-filter>                     
         </activity>
         
-         <activity
+         <activity 
             android:name="com.adigreg.compareme.SettingsActivity"
-            android:label="@string/settingsActivityName" >
-            <intent-filter>
-                <action android:name="android.intent.action.DEFAULT" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+            android:label="@string/settingsActivityName"
+              android:icon="@drawable/ic_action_settings" >
+            <intent-filter >
+                <action android:name="android.intent.action.Game" />
+                <category android:name="android.intent.category.DEFAULT" />         
+            </intent-filter>                     
         </activity>
+        
         
     </application>
 

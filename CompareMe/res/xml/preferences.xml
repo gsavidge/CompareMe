@@ -1,0 +1,76 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <PreferenceCategory 
+        android:title="@string/UserInfoTitle"
+        android:key="pref_key_user_info_title">
+        <Preference 
+            android:key="pref_key_connect_fb"
+            android:summary="@string/pref_connect_fb"/>
+        
+        <!-- opens a subscreen of settings -->
+    	<PreferenceScreen
+        	android:key="button_userinfo_category_key"
+        	android:summary="@string/pref_userInfo"
+        	android:persistent="true"
+        	android:icon="@drawable/ic_action_user">
+        	<ListPreference
+            	android:key="button_userinfo_provider_key"
+            	android:title="@string/pref_userInfo_provider"/>
+        	<!-- opens another nested subscreen -->
+        	<PreferenceScreen
+            	android:key="button_userName_setting_key"
+            	android:summary="@string/pref_userName"
+            	android:persistent="false">
+            </PreferenceScreen>
+            <PreferenceScreen
+            	android:key="button_userAge_setting_key"
+            	android:summary="@string/pref_userAge"
+            	android:persistent="false">
+            </PreferenceScreen>
+            <PreferenceScreen
+            	android:key="button_userGender_setting_key"
+            	android:summary="@string/pref_userGender"
+            	android:persistent="false">
+            </PreferenceScreen>
+            <PreferenceScreen
+            	android:key="button_userStatus_setting_key"
+            	android:summary="@string/pref_userStatus"
+            	android:persistent="false">
+        	</PreferenceScreen>  
+        </PreferenceScreen>  	
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        android:title="@string/pref_QuestionSettings"
+        android:key="pref_key_questionSettings_title">
+        <Preference 
+            android:key="pref_key_language"
+            android:summary="@string/pref_language"/>
+        <Preference 
+            android:key="pref_key_subjects"
+            android:summary="@string/pref_subjects"
+            android:icon="@drawable/ic_collections_collection"/>
+    </PreferenceCategory>  
+    
+     <PreferenceCategory 
+        android:title="@string/pref_sharing"
+        android:key="pref_key_sharing_title">
+    	<Preference 
+            android:key="pref_key_sharingFB"
+            android:summary="@string/pref_sharingFB"/>
+     </PreferenceCategory> 
+    
+      <PreferenceCategory 
+        android:title="@string/pref_locationServices"
+        android:key="pref_key_locationServices_title" 
+        android:enabled="true" 
+        android:selectable="true">
+    	<Preference 
+            android:key="pref_key_lociationServices"
+            android:summary="@string/pref_locationServices"
+            android:defaultValue="true"
+            android:icon="@drawable/ic_action_locate"
+            android:persistent="true"/>
+     </PreferenceCategory>
+    
+</PreferenceScreen>
